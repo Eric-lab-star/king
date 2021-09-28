@@ -1,0 +1,4 @@
+mixin video(video)
+    h2  
+        a(href=`/videos/${video.id}`)=video.title
+    small=video.createdAt

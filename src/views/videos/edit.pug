@@ -1,0 +1,7 @@
+extend ../base
+
+block contents
+    form(method="post")
+        input(type="text", value=video.title, name="title",required, placeholder="title")
+        input(type="text", value=video.summary, name="summary",required, placeholder="summary")
+        input(type="submit", value="Save")

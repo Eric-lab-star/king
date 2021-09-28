@@ -1,0 +1,12 @@
+extends ../base
+
+block contents
+    a(href="/users/start") Start with GitHub &rarr;
+    form(method="post")
+        input(type="text", name="username", placeholder="username", required)
+        input(type="text", name="name", placeholder="name", required)
+        input(type="email", name="email", placeholder="email", required)
+        input(type="password", name="password", placeholder="password", required)
+        input(type="password", name="password2", placeholder="password2", required)
+        input(type="submit", value="Join")
+    hr

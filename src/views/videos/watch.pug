@@ -1,0 +1,10 @@
+extend ../base
+
+block contents
+    h2=video.title
+    div=video.summary 
+    small=video.createdAt
+    hr
+    a(href=`${video.id}/delete`) Delete Video
+    br
+    a(href=`${video.id}/edit`) Edit Video

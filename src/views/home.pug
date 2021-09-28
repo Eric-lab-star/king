@@ -1,0 +1,7 @@
+extends base
+include mixins/videos
+block contents
+    each video in videos
+        +video(video)
+    else 
+        span No Video Uploaded
