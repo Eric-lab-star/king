@@ -1,2 +1,11 @@
 extends ../base
 
+block contents 
+    h1=user.username
+    ul 
+        li name:  #{user.name}
+        li email: #{user.email}
+
+    
+    a(href=`${user._id}/edit`) Edit Your Profile &rarr;
+    

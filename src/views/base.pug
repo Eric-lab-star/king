@@ -19,7 +19,7 @@ html(lang="en")
                             a(href="/login") Login
                     if loggedIn 
                         li 
-                            a(href="/users/profile")  #{user.username}'s Profile
+                            a(href=`/users/${user._id}`)  #{user.username}'s Profile
                         li 
                             a(href="/videos/upload") Upload 
                         li 

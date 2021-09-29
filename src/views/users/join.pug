@@ -2,6 +2,8 @@ extends ../base
 
 block contents
     a(href="/users/start") Start with GitHub &rarr;
+    if(errorMessage)
+        span=errorMessage
     form(method="post")
         input(type="text", name="username", placeholder="username", required)
         input(type="text", name="name", placeholder="name", required)
